@@ -161,3 +161,34 @@ Hice algunas pruebas de control, usando los scripts "iteracion.py" vs "respuesta
 El resultado es positivo, estamos listos para buscar la posción 2023202320232023.
 
 Si llegaste hasta acá, gracias por tu tiempo!
+
+--------------------------------------------------------------------------------------------------
+
+Actualización 5/9/23
+
+Volviendo a 
+
+    (0 1 0)^2  =  (0 1 0) . (0 1 0)  =  (0 0 1)  
+    (0 0 1)       (0 0 1)   (0 0 1)     (0 1 1)
+    (1 1 1)       (1 1 1)   (1 1 1)     (1 2 2)  -> x=1, y=2, z=2 corresponde al elemento 5 = 1 . 2023 + 2 . 2024 + 3 . 2025
+    
+O sea,  
+        (0 1 0)^(n-3)  ... da como resultado una matriz, cuya tercer fila es x(n), y(n), z(n)
+        (0 0 1)         
+        (1 1 1)         
+
+En su momento, había pensado que una forma de resolver potencias enésimas de matrices es viendo si son cíclicas.
+Este no era el caso, tenemos una matriz que siempre va creciendo.
+Pero... si hacemos "trampa" y sólo tomamos las últimas 4 cifras. Ver script -> "matriz.py".
+
+Llamemos M a la matriz. Dio como resultado que M^124003 es la matriz identidad.
+
+Si quiero hacer M^124004 = M^124003 . M^1 (los exponentes se suman) y como M^124003 es la identidad quedaría
+
+    M^124004 = M^1 = (0 1 0) 
+                     (0 0 1)
+                     (1 1 1)  -> corresponde al elemento 4 = 1 . 2023 + 1 . 2024 + 1 . 2025
+
+Script -> "respuesta_matriz" resuelve el problema aplicando estos conceptos.
+
+Saludos!
