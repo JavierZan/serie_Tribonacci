@@ -188,8 +188,8 @@ Si quiero hacer M^124001 = M^124000 . M^1 (los exponentes se suman) y como M^124
 
     M^124001 = M^1 = (0 1 0) 
                      (0 0 1)
-                     (1 1 1)  -> corresponde al elemento 4 = 1 . 2023 + 1 . 2024 + 1 . 2025
-
+                     (1 1 1)  -> corresponde al elemento 4 = elemento 124004 = 1 . 2023 + 1 . 2024 + 1 . 2025
+                     
 Script -> "respuesta_matriz" resuelve el problema aplicando estos conceptos.
 
 Saludos!
